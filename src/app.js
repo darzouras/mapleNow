@@ -1,6 +1,6 @@
 var express = require('express');
 // dbcon.js will not be included in the github repository
-var mysql = require('./dbcon.js');
+var mysql = require('dbcon.js');
 var bodyParser = require('body-parser');
 
 const PORT = 8080;
@@ -15,13 +15,15 @@ app.use(bodyParser.json());
 
 // find the
 var path = require("path");
-app.use(express.static(path.join(__dirname, '/public')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 /****************************
  * HOMEPAGE
  ***************************/
 app.get('/', function(req, res, next){
-    res.render('home');
+    var context = {};
+    context.title = "MapleNow"
+    res.render('home', context);
 });
 
 /****************************

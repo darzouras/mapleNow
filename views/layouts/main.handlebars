@@ -2,12 +2,25 @@
 
 <html>
     <head>
-        <!-- FIXME include in context a title -->
-        <link href="public/style.css" rel="stylesheet">
-        <title>MapleNow</title>
+        <link href="/style.css" rel="stylesheet">
+        <title>{{{title}}}</title>
     </head>
     <body>
-        <div class="container">
+        <div class="navbar-top">
+            <ul class="navtop">
+                <li class="left"><a href="/">Home</a></li>
+                <li class="left"><a href="#">Hair</a></li>
+                <li class="left"><a href="#">Face</a></li>
+                <li class="right"><a href="#">About</a></li>
+            </ul>
+        </div>
+        
         {{{body}}}
+
+        <div class="footer">
+            <ul class="navbottom">
+                <li class="right"><a href="http://maplestory.nexon.net" target="_blank">Nexon Maplestory</a></li>
+            </ul>
+        </div>
     </body>
 </html>

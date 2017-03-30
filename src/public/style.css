@@ -1,0 +1,80 @@
+body {
+    font-family: sans-serif;
+    font-size: 12px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 75px;
+}
+
+/* h1 {
+    font-size: 24px;
+} */
+
+div.container {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
+
+div
+    .navbar-top
+    .footer {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul.navtop {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+ul.navbottom {
+    list-style-type: none;
+    margin-top: 0;
+    overflow: hidden;
+    background-color: #000;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+li.left {
+    float: left;
+}
+
+li.right {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.navcopy {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Responds to screen resize! */
+@media screen and (max-width: 350px){
+    li.right, li.left {float: none;}
+    ul.navtop {position: absolute;}
+    body {margin-top: 200px;}
+}

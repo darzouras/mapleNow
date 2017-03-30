@@ -3,3 +3,4 @@ dbcon.js
 npm-debug.log
 .dockerignore
 .Dockerfile.swp
+Dockerfile
