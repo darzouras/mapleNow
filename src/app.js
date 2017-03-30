@@ -3,10 +3,10 @@ var express = require('express');
 var mysql = require('./dbcon.js');
 var bodyParser = require('body-parser');
 
-app.set('port', (process.env.PORT || 5000));
-
 var app = express();
 var handlebars = require('express-handlebars').create({defaultLayout:'main'});
+
+app.set('port', (process.env.PORT || 5000));
 
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
