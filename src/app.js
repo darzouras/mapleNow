@@ -1,6 +1,6 @@
 var express = require('express');
 // dbcon.js will not be included in the github repository
-var mysql = require('dbcon.js');
+var mysql = require('./dbcon.js');
 var bodyParser = require('body-parser');
 
 const PORT = 8080;
