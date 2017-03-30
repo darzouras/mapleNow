@@ -40,6 +40,6 @@ app.use(function(err, req, res, next){
     res.render('500');
 });
 
-app.listen(PORT, function(){
+app.listen(apps.get('port'), function(){
     console.log('Express started on http://localhost:' + app.get('port') + ' press Ctrl-C to terminate.');
 });
