@@ -1,6 +1,6 @@
 var express = require('express');
 // dbcon.js will not be included in the github repository
-var mysql = require('dbcon.js');
+var mysql = require('./dbcon.js');
 var bodyParser = require('body-parser');
 
 const PORT = 8080;
@@ -40,11 +40,4 @@ app.use(function(err, req, res, next){
 
 app.listen(PORT, function(){
     console.log('Express started on http://localhost:' + PORT + ' press Ctrl-C to terminate.');
-});
-
-startDocker(function() {
-    console.log("Starting MapleNow!");
-    startApp(function() {
-        cleanup(process.exit);
-    })
 });

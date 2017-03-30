@@ -2,11 +2,11 @@
   "name": "mapleNow",
   "version": "1.0.0",
   "description": "GMS Maplestory application for browser",
-  "main": "app.js",
+  "main": "src/app.js",
   "author": "Darlene Zouras",
   "license": "ISC",
   "scripts": {
-      "start": "node app.js"
+      "start": "node src/app.js"
   },
   "dependencies": {
     "body-parser": "^1.13.3",
