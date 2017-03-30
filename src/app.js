@@ -3,7 +3,7 @@ var express = require('express');
 var mysql = require('./dbcon.js');
 var bodyParser = require('body-parser');
 
-const PORT = 8080;
+app.set('port', (process.env.PORT || 5000));
 
 var app = express();
 var handlebars = require('express-handlebars').create({defaultLayout:'main'});
@@ -41,5 +41,5 @@ app.use(function(err, req, res, next){
 });
 
 app.listen(PORT, function(){
-    console.log('Express started on http://localhost:' + PORT + ' press Ctrl-C to terminate.');
+    console.log('Express started on http://localhost:' + app.get('port') + ' press Ctrl-C to terminate.');
 });
