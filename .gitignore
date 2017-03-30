@@ -1,0 +1,5 @@
+node_modules
+dbcon.js
+npm-debug.log
+.dockerignore
+.Dockerfile.swp
