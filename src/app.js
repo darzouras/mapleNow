@@ -1,6 +1,5 @@
 var express = require('express');
-// dbcon.js will not be included in the github repository
-var mysql = require('./dbcon.js');
+//var mysql = require('./dbcon.js');
 var bodyParser = require('body-parser');
 
 var app = express();
@@ -22,8 +21,32 @@ app.use(express.static(path.join(__dirname, 'public')));
  ***************************/
 app.get('/', function(req, res, next){
     var context = {};
-    context.title = "MapleNow"
+    context.title = "MapleNow";
     res.render('home', context);
+});
+
+app.get('/about', function(req, res, next){
+    var context = {};
+    context.title = "MapleNow - About";
+    res.render('about', context);
+});
+
+app.get('/hair', function(req, res, next){
+    var context = {};
+    context.title = "MapleNow - Hairstyles";
+    res.render('hair', context);
+});
+
+app.get('/haircolor', function(req, res, next){
+    var context = {};
+    context.title = "MapleNow - Hair Color";
+    res.render('haircolor', context);
+});
+
+app.get('/face', function(req, res, next){
+    var context = {};
+    context.title = "MapleNow - Plastic Surgery";
+    res.render('face', context);
 });
 
 /****************************
