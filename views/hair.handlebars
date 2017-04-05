@@ -1,12 +1,3 @@
-<div id="scoped-content">
-    <style type="text/css" scoped>
-        .col-sm-2, .col-xs-6 {
-            min-height: 120px;
-            height: auto;
-        }
-    </style>
-</div>
-
 <div class="container">
     <h1>GMS Maplestory Hairstyles</h1>
     <h2>The Basics</h2>
@@ -21,17 +12,11 @@
         </div>
         <div class="col-sm-4 col-xs-6">
             <img src="images/reghair1.png"><br />
-            <p><strong>Hair Style Coupon (REG)</strong> - Randomly changes your hair style, it includes the VIP hair styles in its pool <!-- FIXME as well as some others? Are they the only way to get these hairstyles? --></p>
+            <p><strong>Hair Style Coupon (REG)</strong> - Randomly changes your hair style, it includes the VIP hair styles in its pool as well as some extras (this is not the case in some hair salons, like Edelstein).</p>
         </div>
         <div class="col-sm-4 col-xs-12">
             <img src="images/royalhair1.png"><br />
             <p><strong>Royal Hair Coupon</strong> - The hairstyles offered by this coupon are random and selected from a pool that is updated every three weeks by Nexon. Visit the NPC Big Headward in the Henesys hair salon to redeem it. This is the only way that you can get these hairstyles.</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-4 col-xs-12">
-            <img src="images/aprilfoolhair1.png"><br />
-            <p><strong>April Fools' Day Hair Coupon</strong> - This coupon was available 3/30 - 4/5 2017 in GMS and offered a chance for players to get hairstyles that belong to the opposite gender.</p>
         </div>
     </div>
 </div>
@@ -61,30 +46,14 @@
                         </div>
                     </div>
                     <div class="row">
+                        {{#each royalF}}
                         <div class="col-sm-2 col-xs-6">
-                            <img src="images/hairstyles/heartbraidhair1.png"><br />
-                            <p>Heart-Braid Hair (new)</p>
+                            <div class="anchor">
+                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <p>{{name}}</p>
+                            </div>
                         </div>
-                        <div class="col-sm-2 col-xs-6">
-                            <img src="images/hairstyles/drjanghair1.png"><br />
-                            <p>Dr. Jang Hair</p>
-                        </div>
-                        <div class="col-sm-2 col-xs-6">
-                            <img src="images/hairstyles/cutesyhair2.png"><br />
-                            <p>Cutesy Hair (f)</p>
-                        </div>
-                        <div class="col-sm-2 col-xs-6">
-                            <img src="images/hairstyles/daisybun1.png"><br />
-                            <p>Daisy Bun</p>
-                        </div>
-                        <div class="col-sm-2 col-xs-6">
-                            <img src="images/hairstyles/shinyribbonhair1.png"><br />
-                            <p>Shiny Ribbon Hair</p>
-                        </div>
-                        <div class="col-sm-2 col-xs-6">
-                            <img src="images/hairstyles/lilachair1.png"><br />
-                            <p>Lilac Hair</p>
-                        </div>
+                        {{/each}}
                     </div>
                     <div class="row">
                         <div class="col-sm-12">
@@ -92,30 +61,14 @@
                         </div>
                     </div>
                     <div class="row">
+                        {{#each royalM}}
                         <div class="col-sm-2 col-xs-6">
-                            <img src="images/hairstyles/kpophair1.png"><br />
-                            <p>K-pop Hair (new)</p>
+                            <div class="anchor">
+                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <p>{{name}}</p>
+                            </div>
                         </div>
-                        <div class="col-sm-2 col-xs-6">
-                            <img src="images/hairstyles/naricainhair1.png"><br />
-                            <p>Naricain Hair</p>
-                        </div>
-                        <div class="col-sm-2 col-xs-6">
-                            <img src="images/hairstyles/tropicalhair1.png"><br />
-                            <p>Tropical Hair</p>
-                        </div>
-                        <div class="col-sm-2 col-xs-6">
-                            <img src="images/hairstyles/cutesyhair1.png"><br />
-                            <p>Cutesy Hair (m)</p>
-                        </div>
-                        <div class="col-sm-2 col-xs-6">
-                            <img src="images/hairstyles/biskhair1.png"><br />
-                            <p>Bisk Hair</p>
-                        </div>
-                        <div class="col-sm-2 col-xs-6">
-                            <img src="images/hairstyles/roverhair1.png"><br />
-                            <p>Rover Hair</p>
-                        </div>
+                        {{/each}}
                     </div>
                 </div>
             </div>
@@ -135,37 +88,15 @@
                             <p><strong>Female VIP Hair Styles</strong></p>
                         </div>
                     </div>
-                    <div class="row align-items-end">
-                        <div class="col-sm-2 col-xs-6 align-self-end">
-                            <img src="images/hairstyles/angelica1.png"><br />
-                            <p>Angelica</p>
-                        </div>
+                    <div class="row">
+                        {{#each henesysFVIP}}
                         <div class="col-sm-2 col-xs-6">
-                            <img src="images/hairstyles/aranhair1.png"><br />
-                            <p>Aran Hair (f)</p>
+                            <div class="anchor">
+                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <p>{{name}}</p>
+                            </div>
                         </div>
-                        <div class="col-sm-2 col-xs-6">
-                            <img src="images/hairstyles/chantelle1.png"><br />
-                            <p>Chantelle</p>
-                        </div>
-                        <div class="col-sm-2 col-xs-6">
-                            <img src="images/hairstyles/crazymedusa1.png"><br />
-                            <p>Crazy Medusa</p>
-                        </div>
-                        <div class="col-sm-2 col-xs-6">
-                            <img src="images/hairstyles/fourtailbraids1.png"><br />
-                            <p>Fourtail Braids</p>
-                        </div>
-                        <div class="col-sm-2 col-xs-6">
-                            <img src="images/hairstyles/frizzledizzle1.png"><br />
-                            <p>Frizzle Dizzle</p>
-                        </div>
-                    </div>
-                    <div class="row align-items-end">
-                        <div class="col-sm-2 col-xs-6">
-                            <img src="images/hairstyles/fullbangs1.png"><br />
-                            <p>Full Bangs</p>
-                        </div>
+                        {{/each}}
                     </div>
                     <div class="row">
                         <div class="col-sm-12">
@@ -173,18 +104,14 @@
                         </div>
                     </div>
                     <div class="row">
+                        {{#each henesysFREG}}
                         <div class="col-sm-2 col-xs-6">
-                            <img src="images/hairstyles/evanhair1.png"><br />
-                            <p>Evan Hair (f)</p>
+                            <div class="anchor">
+                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <p>{{name}}</p>
+                            </div>
                         </div>
-                        <div class="col-sm-2 col-xs-6">
-                            <img src="images/hairstyles/rainbow1.png"><br />
-                            <p>Rainbow</p>
-                        </div>
-                        <div class="col-sm-2 col-xs-6">
-                            <img src="images/hairstyles/stella1.png"><br />
-                            <p>Stella</p>
-                        </div>
+                        {{/each}}
                     </div>
                     <div class="row">
                         <div class="col-sm-12">
@@ -192,49 +119,29 @@
                         </div>
                     </div>
                     <div class="row">
+                        {{#each henesysMVIP}}
                         <div class="col-sm-2 col-xs-6">
-                            <img src="images/hairstyles/arancut1.png"><br />
-                            <p>Aran Cut</p>
+                            <div class="anchor">
+                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <p>{{name}}</p>
+                            </div>
                         </div>
-                        <div class="col-sm-2 col-xs-6">
-                            <img src="images/hairstyles/catalyst1.png"><br />
-                            <p>Catalyst</p>
-                        </div>
-                        <div class="col-sm-2 col-xs-6">
-                            <img src="images/hairstyles/shaggywax1.png"><br />
-                            <p>Shaggy Wax</p>
-                        </div>
-                        <div class="col-sm-2 col-xs-6">
-                            <img src="images/hairstyles/topknot1.png"><br />
-                            <p>Topknot</p>
-                        </div>
-                        <div class="col-sm-2 col-xs-6">
-                            <img src="images/hairstyles/wind1.png"><br />
-                            <p>Wind</p>
-                        </div>
-                        <div class="col-sm-2 col-xs-6">
-                            <img src="images/hairstyles/gagahair1.png"><br />
-                            <p>Gaga Hair</p>
-                        </div>
+                        {{/each}}
                     </div>
                     <div class="row">
-                        <div class="col-sm-2 col-xs-6">
-                            <img src="images/hairstyles/thecoco1.png"><br />
-                            <p>The Coco</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-2 col-xs-6">
+                        <div class="col-sm-12">
                             <p><strong>Additional Male REG Hair Styles</strong></p>
                         </div>
                     </div>
                     <div class="row">
+                        {{#each henesysMREG}}
                         <div class="col-sm-2 col-xs-6">
-                            <p>Evan Hair (M)</p>
+                            <div class="anchor">
+                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <p>{{name}}</p>
+                            </div>
                         </div>
-                        <div class="col-sm-2 col-xs-6">
-                            <p>The Mo Rawk</p>
-                        </div>
+                        {{/each}}
                     </div>
                 </div>
             </div>
@@ -249,6 +156,66 @@
             </div>
             <div id="collapse3" class="panel-collapse collapse">
                 <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Female VIP Hair Styles</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{#each kerningFVIP}}
+                        <div class="col-sm-2 col-xs-6">
+                            <div class="anchor">
+                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <p>{{name}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Additional Female REG Hair Styles</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{#each kerningFREG}}
+                        <div class="col-sm-2 col-xs-6">
+                            <div class="anchor">
+                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <p>{{name}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Male VIP Hair Styles</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{#each kerningMVIP}}
+                        <div class="col-sm-2 col-xs-6">
+                            <div class="anchor">
+                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <p>{{name}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Additional Male REG Hair Styles</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{#each kerningMREG}}
+                        <div class="col-sm-2 col-xs-6">
+                            <div class="anchor">
+                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <p>{{name}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
                 </div>
             </div>
         </div>
@@ -368,6 +335,66 @@
             </div>
             <div id="collapse4" class="panel-collapse collapse">
                 <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Female VIP Hair Styles</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{#each nlcFVIP}}
+                        <div class="col-sm-2 col-xs-6">
+                            <div class="anchor">
+                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <p>{{name}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Additional Female REG Hair Styles</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{#each nlcFREG}}
+                        <div class="col-sm-2 col-xs-6">
+                            <div class="anchor">
+                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <p>{{name}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Male VIP Hair Styles</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{#each nlcMVIP}}
+                        <div class="col-sm-2 col-xs-6">
+                            <div class="anchor">
+                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <p>{{name}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Additional Male REG Hair Styles</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{#each nlcMREG}}
+                        <div class="col-sm-2 col-xs-6">
+                            <div class="anchor">
+                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <p>{{name}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
                 </div>
             </div>
         </div>
@@ -381,6 +408,66 @@
             </div>
             <div id="collapse5" class="panel-collapse collapse">
                 <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Female VIP Hair Styles</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{#each orbisFVIP}}
+                        <div class="col-sm-2 col-xs-6">
+                            <div class="anchor">
+                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <p>{{name}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Additional Female REG Hair Styles</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{#each orbisFREG}}
+                        <div class="col-sm-2 col-xs-6">
+                            <div class="anchor">
+                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <p>{{name}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Male VIP Hair Styles</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{#each orbisMVIP}}
+                        <div class="col-sm-2 col-xs-6">
+                            <div class="anchor">
+                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <p>{{name}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Additional Male REG Hair Styles</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{#each orbisMREG}}
+                        <div class="col-sm-2 col-xs-6">
+                            <div class="anchor">
+                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <p>{{name}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
                 </div>
             </div>
         </div>
@@ -394,6 +481,66 @@
             </div>
             <div id="collapse6" class="panel-collapse collapse">
                 <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Female VIP Hair Styles</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{#each ludiFVIP}}
+                        <div class="col-sm-2 col-xs-6">
+                            <div class="anchor">
+                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <p>{{name}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Additional Female REG Hair Styles</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{#each ludiFREG}}
+                        <div class="col-sm-2 col-xs-6">
+                            <div class="anchor">
+                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <p>{{name}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Male VIP Hair Styles</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{#each ludiMVIP}}
+                        <div class="col-sm-2 col-xs-6">
+                            <div class="anchor">
+                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <p>{{name}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Additional Male REG Hair Styles</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{#each ludiMREG}}
+                        <div class="col-sm-2 col-xs-6">
+                            <div class="anchor">
+                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <p>{{name}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
                 </div>
             </div>
         </div>
@@ -407,6 +554,66 @@
             </div>
             <div id="collapse7" class="panel-collapse collapse">
                 <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Female VIP Hair Styles</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{#each mulungFVIP}}
+                        <div class="col-sm-2 col-xs-6">
+                            <div class="anchor">
+                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <p>{{name}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Additional Female REG Hair Styles</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{#each mulungFREG}}
+                        <div class="col-sm-2 col-xs-6">
+                            <div class="anchor">
+                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <p>{{name}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Male VIP Hair Styles</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{#each mulungMVIP}}
+                        <div class="col-sm-2 col-xs-6">
+                            <div class="anchor">
+                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <p>{{name}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Additional Male REG Hair Styles</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{#each mulungMREG}}
+                        <div class="col-sm-2 col-xs-6">
+                            <div class="anchor">
+                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <p>{{name}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
                 </div>
             </div>
         </div>
@@ -420,6 +627,36 @@
             </div>
             <div id="collapse8" class="panel-collapse collapse">
                 <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Female VIP Hair Styles</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{#each edelFVIP}}
+                        <div class="col-sm-2 col-xs-6">
+                            <div class="anchor">
+                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <p>{{name}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Male VIP Hair Styles</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{#each edelMVIP}}
+                        <div class="col-sm-2 col-xs-6">
+                            <div class="anchor">
+                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <p>{{name}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
                 </div>
             </div>
         </div>
@@ -428,11 +665,71 @@
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse9">Showa Hair Salon</a>
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse9">Ariant Hair Salon</a>
                 </h4>
             </div>
             <div id="collapse9" class="panel-collapse collapse">
                 <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Female VIP Hair Styles</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{#each ariantFVIP}}
+                        <div class="col-sm-2 col-xs-6">
+                            <div class="anchor">
+                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <p>{{name}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Additional Female REG Hair Styles</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{#each ariantFREG}}
+                        <div class="col-sm-2 col-xs-6">
+                            <div class="anchor">
+                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <p>{{name}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Male VIP Hair Styles</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{#each ariantMVIP}}
+                        <div class="col-sm-2 col-xs-6">
+                            <div class="anchor">
+                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <p>{{name}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Additional Male REG Hair Styles</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{#each ariantMREG}}
+                        <div class="col-sm-2 col-xs-6">
+                            <div class="anchor">
+                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <p>{{name}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
                 </div>
             </div>
         </div>
@@ -441,11 +738,71 @@
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse10">Ariant Hair Salon</a>
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse10">Showa Hair Salon</a>
                 </h4>
             </div>
             <div id="collapse10" class="panel-collapse collapse">
                 <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Female VIP Hair Styles</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{#each showaFVIP}}
+                        <div class="col-sm-2 col-xs-6">
+                            <div class="anchor">
+                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <p>{{name}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Additional Female REG Hair Styles</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{#each showaFREG}}
+                        <div class="col-sm-2 col-xs-6">
+                            <div class="anchor">
+                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <p>{{name}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Male VIP Hair Styles</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{#each showaMVIP}}
+                        <div class="col-sm-2 col-xs-6">
+                            <div class="anchor">
+                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <p>{{name}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Additional Male REG Hair Styles</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{#each showaMREG}}
+                        <div class="col-sm-2 col-xs-6">
+                            <div class="anchor">
+                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <p>{{name}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
                 </div>
             </div>
         </div>
@@ -463,5 +820,31 @@
             </div>
         </div>
         <!-- END SHANGHAI -->
+        <!-- BEGIN SINGAPORE -->
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse13">Singapore (CBD) Hair Salon</a>
+                </h4>
+            </div>
+            <div id="collapse13" class="panel-collapse collapse">
+                <div class="panel-body">
+                </div>
+            </div>
+        </div>
+        <!-- END SINGAPORE -->
+        <!-- BEGIN STUMP TOWN
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse11">Stump Town Hair Salon</a>
+                </h4>
+            </div>
+            <div id="collapse11" class="panel-collapse collapse">
+                <div class="panel-body">
+                </div>
+            </div>
+        </div>
+         END STUMP TOWN -->
     </div>
 </div>
