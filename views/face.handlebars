@@ -21,11 +21,36 @@
 </div>
 
 <div class="container">
+    <div class="navbar navbar-default" role="navigation">
+        <div class="navbar-inner">
+       	    <div class="container">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Eye Colors<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="javascript:;" onclick="switchColor('black')">Black</a>
+                            <li><a href="javascript:;" onclick="switchColor('red')">Red</a></li>
+                            <li><a href="javascript:;" onclick="switchColor('blue')">Blue</a></li>
+                            <li><a href="javascript:;" onclick="switchColor('green')">Green</a></li>
+                            <li><a href="javascript:;" onclick="switchColor('hazel')">Hazel</a></li>
+                            <li><a href="javascript:;" onclick="switchColor('sapphire')">Sapphire</a></li>
+                            <li><a href="javascript:;" onclick="switchColor('violet')">Violet</a></li>
+                            <li><a href="javascript:;" onclick="switchColor('amethyst')">Amethyst</a></li>
+                            <li><a href="javascript:;" onclick="switchColor('white')">White</a></li>
+                        </ul>
+                    </li>
+                </ul>
+    		</div>
+    	</div>
+    </div>
+</div>
+
+<div class="container">
     <div class="panel-group" id="accordion">
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Royal Faces</a>
+                    <a data-toggle="collapse" data-toggle="#accordion" href="#collapse1">Royal Faces</a>
                 </h4>
             </div>
             <div id="collapse1" class="panel-collapse collapse in">
@@ -99,7 +124,7 @@
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Henesys Plastic Surgery</a>
+                    <a data-toggle="collapse" data-toggle="#accordion" href="#collapse2">Henesys Plastic Surgery</a>
                 </h4>
             </div>
             <div id="collapse2" class="panel-collapse collapse">
@@ -110,25 +135,14 @@
                         </div>
                     </div>
                     <div class="row">
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <p><strong>Additional Female REG Faces</strong></p>
+                        {{#each henesysF}}
+                        <div class="col-sm-2 col-xs-6">
+                            <div class="anchor">
+                                <img id="hen_{{image}}"><br />
+                                <p>{{name}}</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <p><strong>Male VIP Faces</strong></p>
-                        </div>
-                    </div>
-                    <div class="row">
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <p><strong>Additional Male REG Faces</strong></p>
-                        </div>
+                        {{/each}}
                     </div>
                 </div>
             </div>
@@ -138,7 +152,7 @@
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse12">Amoria Plastic Surgery</a>
+                    <a data-toggle="collapse" data-toggle="#accordion" href="#collapse12">Amoria Plastic Surgery</a>
                 </h4>
             </div>
             <div id="collapse12" class="panel-collapse collapse">
@@ -151,7 +165,7 @@
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">NLC Plastic Surgery</a>
+                    <a data-toggle="collapse" data-toggle="#accordion" href="#collapse4">NLC Plastic Surgery</a>
                 </h4>
             </div>
             <div id="collapse4" class="panel-collapse collapse">
@@ -164,7 +178,7 @@
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Orbis Plastic Surgery</a>
+                    <a data-toggle="collapse" data-toggle="#accordion" href="#collapse5">Orbis Plastic Surgery</a>
                 </h4>
             </div>
             <div id="collapse5" class="panel-collapse collapse">
@@ -177,7 +191,7 @@
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">Ludibrium Plastic Surgery</a>
+                    <a data-toggle="collapse" data-toggle="#accordion" href="#collapse6">Ludibrium Plastic Surgery</a>
                 </h4>
             </div>
             <div id="collapse6" class="panel-collapse collapse">
@@ -190,7 +204,7 @@
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">Mu Lung Plastic Surgery</a>
+                    <a data-toggle="collapse" data-toggle="#accordion" href="#collapse7">Mu Lung Plastic Surgery</a>
                 </h4>
             </div>
             <div id="collapse7" class="panel-collapse collapse">
@@ -203,7 +217,7 @@
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">Edelstein Plastic Surgery</a>
+                    <a data-toggle="collapse" data-toggle="#accordion" href="#collapse8">Edelstein Plastic Surgery</a>
                 </h4>
             </div>
             <div id="collapse8" class="panel-collapse collapse">
@@ -216,7 +230,7 @@
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse9">Showa Plastic Surgery</a>
+                    <a data-toggle="collapse" data-toggle="#accordion" href="#collapse9">Showa Plastic Surgery</a>
                 </h4>
             </div>
             <div id="collapse9" class="panel-collapse collapse">
@@ -229,11 +243,33 @@
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse10">Ariant Plastic Surgery</a>
+                    <a data-toggle="collapse" data-toggle="#accordion" href="#collapse10">Ariant Plastic Surgery</a>
                 </h4>
             </div>
             <div id="collapse10" class="panel-collapse collapse">
                 <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Female VIP Faces</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{#each ariantF}}
+                        <div class="col-sm-2 col-xs-6">
+                            <div class="anchor">
+                                <img id="ariant_{{image}}"><br />
+                                <p>{{name}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Male VIP Faces</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                    </div>
                 </div>
             </div>
         </div>
@@ -242,7 +278,7 @@
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse11">Shanghai Plastic Surgery</a>
+                    <a data-toggle="collapse" data-toggle="#accordion" href="#collapse11">Shanghai Plastic Surgery</a>
                 </h4>
             </div>
             <div id="collapse11" class="panel-collapse collapse">
@@ -253,3 +289,27 @@
         <!-- END SHANGHAI -->
     </div>
 </div>
+
+<script>
+var color = "red";
+
+function reload() {
+    {{#each ariantF}}
+    document.getElementById("ariant_{{image}}").src = "images/faces/" + color + "/" + "{{image}}.png";
+    {{/each}}
+    {{#each henesysF}}
+    document.getElementById("hen_{{image}}").src = "images/faces/" + color + "/" + "{{image}}.png";
+    {{/each}}
+}
+
+function switchColor(newColor) {
+    if (color != newColor) {
+        color = newColor;
+        reload();
+    }
+}
+
+window.onload = function() {
+    reload();
+}
+</script>

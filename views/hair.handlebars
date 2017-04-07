@@ -26,6 +26,31 @@
     <div class="row">
         <div class="col-sm-12">
             <p><strong>If I have any part of this grid wrong or if anything is missing, please reach out to me on Twitter at <a href="http://twitter.com/darzouras">darzouras</a>!!! This is a project for the community and I would rather work to update it than allow it to be outdated and incorrect! It was difficult to find any updated information even on the Nexon Maplestory website so I expect there to be some holes!</strong></p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="navbar navbar-default" role="navigation">
+        <div class="navbar-inner">
+       	    <div class="container">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Hair Colors<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="javascript:;" onclick="switchColor('black')">Black</a></li>
+                            <li>Brown</li>
+                            <li>Red</li>
+                            <li>Orange</li>
+                            <li>Yellow</li>
+                            <li>Green</li>
+                            <li>Blue</li>
+                            <li>Purple</li>
+                        </ul>
+                    </li>
+                </ul>
+    		</div>
+    	</div>
     </div>
 </div>
 
@@ -92,7 +117,7 @@
                         {{#each henesysFVIP}}
                         <div class="col-sm-2 col-xs-6">
                             <div class="anchor">
-                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <img id="hen_{{image}}"><br />
                                 <p>{{name}}</p>
                             </div>
                         </div>
@@ -107,7 +132,7 @@
                         {{#each henesysFREG}}
                         <div class="col-sm-2 col-xs-6">
                             <div class="anchor">
-                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <img id="hen_{{image}}"><br />
                                 <p>{{name}}</p>
                             </div>
                         </div>
@@ -122,7 +147,7 @@
                         {{#each henesysMVIP}}
                         <div class="col-sm-2 col-xs-6">
                             <div class="anchor">
-                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <img id="hen_{{image}}"><br />
                                 <p>{{name}}</p>
                             </div>
                         </div>
@@ -137,7 +162,7 @@
                         {{#each henesysMREG}}
                         <div class="col-sm-2 col-xs-6">
                             <div class="anchor">
-                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <img id="hen_{{image}}"><br />
                                 <p>{{name}}</p>
                             </div>
                         </div>
@@ -165,7 +190,7 @@
                         {{#each kerningFVIP}}
                         <div class="col-sm-2 col-xs-6">
                             <div class="anchor">
-                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <img id="kerning_{{image}}"><br />
                                 <p>{{name}}</p>
                             </div>
                         </div>
@@ -180,7 +205,7 @@
                         {{#each kerningFREG}}
                         <div class="col-sm-2 col-xs-6">
                             <div class="anchor">
-                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <img id="kerning_{{image}}"><br />
                                 <p>{{name}}</p>
                             </div>
                         </div>
@@ -195,7 +220,7 @@
                         {{#each kerningMVIP}}
                         <div class="col-sm-2 col-xs-6">
                             <div class="anchor">
-                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <img id="kerning_{{image}}"><br />
                                 <p>{{name}}</p>
                             </div>
                         </div>
@@ -210,7 +235,7 @@
                         {{#each kerningMREG}}
                         <div class="col-sm-2 col-xs-6">
                             <div class="anchor">
-                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <img id="kerning_{{image}}"><br />
                                 <p>{{name}}</p>
                             </div>
                         </div>
@@ -220,112 +245,6 @@
             </div>
         </div>
         <!-- END KERNING -->
-        <!-- BEGIN AMORIA
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <a data-toggle="collapse" data-toggle="#accordion" href="#collapse12">Amoria Hair Salon</a>
-                </h4>
-            </div>
-            <div id="collapse12" class="panel-collapse collapse">
-                <div class="panel-body">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <p><strong>Female VIP Hair Styles</strong></p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-2 col-xs-6">
-                            <p>Angelica</p>
-                        </div>
-                        <div class="col-sm-2 col-xs-6">
-                            <p>Ballroom Classic</p>
-                        </div>
-                        <div class="col-sm-2 col-xs-6">
-                            <p>Carla</p>
-                        </div>
-                        <div class="col-sm-2 col-xs-6">
-                            <p>Caspia</p>
-                        </div>
-                        <div class="col-sm-2 col-xs-6">
-                            <p>Daisy Do</p>
-                        </div>
-                        <div class="col-sm-2 col-xs-6">
-                            <p>The Honeybun</p>
-                        </div>
-                        <div class="col-sm-2 col-xs-6">
-                            <p>Victorian Wrap</p>
-                        </div>
-                        <div class="col-sm-2 col-xs-6">
-                            <p>Darling Diva</p>
-                        </div>
-                        <div class="col-sm-2 col-xs-6">
-                            <p>Cecilia Twist</p>
-                        </div>
-                        <div class="col-sm-2 col-xs-6">
-                            <p>Classy Sass</p>
-                        </div>
-                        <div class="col-sm-2 col-xs-6">
-                            <p>Lana</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <p><strong>Additional Female REG Hair Styles</strong></p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-2 col-xs-6">
-                            <p>Francesca</p>
-                        </div>
-                        <div class="col-sm-2 col-xs-6">
-                            <p>Maiden's Weave</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <p><strong>Male VIP Hair Styles</strong></p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-2 col-xs-6">
-                            <p>Casanova</p>
-                        </div>
-                        <div class="col-sm-2 col-xs-6">
-                            <p>Eternal Elegance</p>
-                        </div>
-                        <div class="col-sm-2 col-xs-6">
-                            <p>Fuzz</p>
-                        </div>
-                        <div class="col-sm-2 col-xs-6">
-                            <p>Jun Pyo Hair</p>
-                        </div>
-                        <div class="col-sm-2 col-xs-6">
-                            <p>Metro</p>
-                        </div>
-                        <div class="col-sm-2 col-xs-6">
-                            <p>Natural</p>
-                        </div>
-                        <div class="col-sm-2 col-xs-6">
-                            <p>Rockie</p>
-                        </div>
-                        <div class="col-sm-2 col-xs-6">
-                            <p>Romance</p>
-                        </div>
-                        <div class="col-sm-2 col-xs-6">
-                            <p>Saturday Special</p>
-                        </div>
-                        <div class="col-sm-2 col-xs-6">
-                            <p>Super Suave</p>
-                        </div>
-                        <div class="col-sm-2 col-xs-6">
-                            <p>Windy Hair</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        END AMORIA -->
         <!-- BEGIN NLC -->
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -344,7 +263,7 @@
                         {{#each nlcFVIP}}
                         <div class="col-sm-2 col-xs-6">
                             <div class="anchor">
-                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <img id="nlc_{{image}}"><br />
                                 <p>{{name}}</p>
                             </div>
                         </div>
@@ -359,7 +278,7 @@
                         {{#each nlcFREG}}
                         <div class="col-sm-2 col-xs-6">
                             <div class="anchor">
-                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <img id="nlc_{{image}}"><br />
                                 <p>{{name}}</p>
                             </div>
                         </div>
@@ -374,7 +293,7 @@
                         {{#each nlcMVIP}}
                         <div class="col-sm-2 col-xs-6">
                             <div class="anchor">
-                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <img id="nlc_{{image}}"><br />
                                 <p>{{name}}</p>
                             </div>
                         </div>
@@ -389,7 +308,7 @@
                         {{#each nlcMREG}}
                         <div class="col-sm-2 col-xs-6">
                             <div class="anchor">
-                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <img id="nlc_{{image}}"><br />
                                 <p>{{name}}</p>
                             </div>
                         </div>
@@ -417,7 +336,7 @@
                         {{#each orbisFVIP}}
                         <div class="col-sm-2 col-xs-6">
                             <div class="anchor">
-                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <img id="orbis_{{image}}"><br />
                                 <p>{{name}}</p>
                             </div>
                         </div>
@@ -432,7 +351,7 @@
                         {{#each orbisFREG}}
                         <div class="col-sm-2 col-xs-6">
                             <div class="anchor">
-                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <img id="orbis_{{image}}"><br />
                                 <p>{{name}}</p>
                             </div>
                         </div>
@@ -447,7 +366,7 @@
                         {{#each orbisMVIP}}
                         <div class="col-sm-2 col-xs-6">
                             <div class="anchor">
-                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <img id="orbis_{{image}}"><br />
                                 <p>{{name}}</p>
                             </div>
                         </div>
@@ -462,7 +381,7 @@
                         {{#each orbisMREG}}
                         <div class="col-sm-2 col-xs-6">
                             <div class="anchor">
-                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <img id="orbis_{{image}}"><br />
                                 <p>{{name}}</p>
                             </div>
                         </div>
@@ -490,7 +409,7 @@
                         {{#each ludiFVIP}}
                         <div class="col-sm-2 col-xs-6">
                             <div class="anchor">
-                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <img id="ludi_{{image}}"><br />
                                 <p>{{name}}</p>
                             </div>
                         </div>
@@ -505,7 +424,7 @@
                         {{#each ludiFREG}}
                         <div class="col-sm-2 col-xs-6">
                             <div class="anchor">
-                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <img id="ludi_{{image}}"><br />
                                 <p>{{name}}</p>
                             </div>
                         </div>
@@ -520,7 +439,7 @@
                         {{#each ludiMVIP}}
                         <div class="col-sm-2 col-xs-6">
                             <div class="anchor">
-                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <img id="ludi_{{image}}"><br />
                                 <p>{{name}}</p>
                             </div>
                         </div>
@@ -535,7 +454,7 @@
                         {{#each ludiMREG}}
                         <div class="col-sm-2 col-xs-6">
                             <div class="anchor">
-                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <img id="ludi_{{image}}"><br />
                                 <p>{{name}}</p>
                             </div>
                         </div>
@@ -563,7 +482,7 @@
                         {{#each mulungFVIP}}
                         <div class="col-sm-2 col-xs-6">
                             <div class="anchor">
-                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <img id="ml_{{image}}"><br />
                                 <p>{{name}}</p>
                             </div>
                         </div>
@@ -578,7 +497,7 @@
                         {{#each mulungFREG}}
                         <div class="col-sm-2 col-xs-6">
                             <div class="anchor">
-                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <img id="ml_{{image}}"><br />
                                 <p>{{name}}</p>
                             </div>
                         </div>
@@ -593,7 +512,7 @@
                         {{#each mulungMVIP}}
                         <div class="col-sm-2 col-xs-6">
                             <div class="anchor">
-                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <img id="ml_{{image}}"><br />
                                 <p>{{name}}</p>
                             </div>
                         </div>
@@ -608,7 +527,7 @@
                         {{#each mulungMREG}}
                         <div class="col-sm-2 col-xs-6">
                             <div class="anchor">
-                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <img id="ml_{{image}}"><br />
                                 <p>{{name}}</p>
                             </div>
                         </div>
@@ -636,7 +555,7 @@
                         {{#each edelFVIP}}
                         <div class="col-sm-2 col-xs-6">
                             <div class="anchor">
-                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <img id="edel_{{image}}"><br />
                                 <p>{{name}}</p>
                             </div>
                         </div>
@@ -651,7 +570,7 @@
                         {{#each edelMVIP}}
                         <div class="col-sm-2 col-xs-6">
                             <div class="anchor">
-                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <img id="edel_{{image}}"><br />
                                 <p>{{name}}</p>
                             </div>
                         </div>
@@ -679,7 +598,7 @@
                         {{#each ariantFVIP}}
                         <div class="col-sm-2 col-xs-6">
                             <div class="anchor">
-                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <img id="ariant_{{image}}"><br />
                                 <p>{{name}}</p>
                             </div>
                         </div>
@@ -694,7 +613,7 @@
                         {{#each ariantFREG}}
                         <div class="col-sm-2 col-xs-6">
                             <div class="anchor">
-                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <img id="ariant_{{image}}"><br />
                                 <p>{{name}}</p>
                             </div>
                         </div>
@@ -709,7 +628,7 @@
                         {{#each ariantMVIP}}
                         <div class="col-sm-2 col-xs-6">
                             <div class="anchor">
-                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <img id="ariant_{{image}}"><br />
                                 <p>{{name}}</p>
                             </div>
                         </div>
@@ -724,7 +643,7 @@
                         {{#each ariantMREG}}
                         <div class="col-sm-2 col-xs-6">
                             <div class="anchor">
-                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <img id="ariant_{{image}}"><br />
                                 <p>{{name}}</p>
                             </div>
                         </div>
@@ -752,7 +671,7 @@
                         {{#each showaFVIP}}
                         <div class="col-sm-2 col-xs-6">
                             <div class="anchor">
-                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <img id="showa_{{image}}"><br />
                                 <p>{{name}}</p>
                             </div>
                         </div>
@@ -767,7 +686,7 @@
                         {{#each showaFREG}}
                         <div class="col-sm-2 col-xs-6">
                             <div class="anchor">
-                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <img id="showa_{{image}}"><br />
                                 <p>{{name}}</p>
                             </div>
                         </div>
@@ -782,7 +701,7 @@
                         {{#each showaMVIP}}
                         <div class="col-sm-2 col-xs-6">
                             <div class="anchor">
-                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <img id="showa_{{image}}"><br />
                                 <p>{{name}}</p>
                             </div>
                         </div>
@@ -797,7 +716,7 @@
                         {{#each showaMREG}}
                         <div class="col-sm-2 col-xs-6">
                             <div class="anchor">
-                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <img id="showa_{{image}}"><br />
                                 <p>{{name}}</p>
                             </div>
                         </div>
@@ -848,3 +767,123 @@
          END STUMP TOWN -->
     </div>
 </div>
+
+<script>
+var color = "black";
+
+function reload() {
+    {{#each henesysFVIP}}
+    document.getElementById("hen_{{image}}").src = "images/hairstyles/" + color + "/" + "{{image}}.png";
+    {{/each}}
+    {{#each henesysFREG}}
+    document.getElementById("hen_{{image}}").src = "images/hairstyles/" + color + "/" + "{{image}}.png";
+    {{/each}}
+    {{#each henesysMVIP}}
+    document.getElementById("hen_{{image}}").src = "images/hairstyles/" + color + "/" + "{{image}}.png";
+    {{/each}}
+    {{#each henesysMREG}}
+    document.getElementById("hen_{{image}}").src = "images/hairstyles/" + color + "/" + "{{image}}.png";
+    {{/each}}
+    {{#each kerningFVIP}}
+    document.getElementById("kerning_{{image}}").src = "images/hairstyles/" + color + "/" + "{{image}}.png";
+    {{/each}}
+    {{#each kerningFREG}}
+    document.getElementById("kerning_{{image}}").src = "images/hairstyles/" + color + "/" + "{{image}}.png";
+    {{/each}}
+    {{#each kerningMVIP}}
+    document.getElementById("kerning_{{image}}").src = "images/hairstyles/" + color + "/" + "{{image}}.png";
+    {{/each}}
+    {{#each kerningMREG}}
+    document.getElementById("kerning_{{image}}").src = "images/hairstyles/" + color + "/" + "{{image}}.png";
+    {{/each}}
+    {{#each nlcFVIP}}
+    document.getElementById("nlc_{{image}}").src = "images/hairstyles/" + color + "/" + "{{image}}.png";
+    {{/each}}
+    {{#each nlcFREG}}
+    document.getElementById("nlc_{{image}}").src = "images/hairstyles/" + color + "/" + "{{image}}.png";
+    {{/each}}
+    {{#each nlcMVIP}}
+    document.getElementById("nlc_{{image}}").src = "images/hairstyles/" + color + "/" + "{{image}}.png";
+    {{/each}}
+    {{#each nlcMREG}}
+    document.getElementById("nlc_{{image}}").src = "images/hairstyles/" + color + "/" + "{{image}}.png";
+    {{/each}}
+    {{#each orbisFVIP}}
+    document.getElementById("orbis_{{image}}").src = "images/hairstyles/" + color + "/" + "{{image}}.png";
+    {{/each}}
+    {{#each orbisFREG}}
+    document.getElementById("orbis_{{image}}").src = "images/hairstyles/" + color + "/" + "{{image}}.png";
+    {{/each}}
+    {{#each orbisMVIP}}
+    document.getElementById("orbis_{{image}}").src = "images/hairstyles/" + color + "/" + "{{image}}.png";
+    {{/each}}
+    {{#each orbisMREG}}
+    document.getElementById("orbis_{{image}}").src = "images/hairstyles/" + color + "/" + "{{image}}.png";
+    {{/each}}
+    {{#each ludiFVIP}}
+    document.getElementById("ludi_{{image}}").src = "images/hairstyles/" + color + "/" + "{{image}}.png";
+    {{/each}}
+    {{#each ludiFREG}}
+    document.getElementById("ludi_{{image}}").src = "images/hairstyles/" + color + "/" + "{{image}}.png";
+    {{/each}}
+    {{#each ludiMVIP}}
+    document.getElementById("ludi_{{image}}").src = "images/hairstyles/" + color + "/" + "{{image}}.png";
+    {{/each}}
+    {{#each ludiMREG}}
+    document.getElementById("ludi_{{image}}").src = "images/hairstyles/" + color + "/" + "{{image}}.png";
+    {{/each}}
+    {{#each mulungFVIP}}
+    document.getElementById("ml_{{image}}").src = "images/hairstyles/" + color + "/" + "{{image}}.png";
+    {{/each}}
+    {{#each mulungFREG}}
+    document.getElementById("ml_{{image}}").src = "images/hairstyles/" + color + "/" + "{{image}}.png";
+    {{/each}}
+    {{#each mulungMVIP}}
+    document.getElementById("ml_{{image}}").src = "images/hairstyles/" + color + "/" + "{{image}}.png";
+    {{/each}}
+    {{#each mulungMREG}}
+    document.getElementById("ml_{{image}}").src = "images/hairstyles/" + color + "/" + "{{image}}.png";
+    {{/each}}
+    {{#each edelFVIP}}
+    document.getElementById("edel_{{image}}").src = "images/hairstyles/" + color + "/" + "{{image}}.png";
+    {{/each}}
+    {{#each edelMVIP}}
+    document.getElementById("edel_{{image}}").src = "images/hairstyles/" + color + "/" + "{{image}}.png";
+    {{/each}}
+    {{#each ariantFVIP}}
+    document.getElementById("ariant_{{image}}").src = "images/hairstyles/" + color + "/" + "{{image}}.png";
+    {{/each}}
+    {{#each ariantFREG}}
+    document.getElementById("ariant_{{image}}").src = "images/hairstyles/" + color + "/" + "{{image}}.png";
+    {{/each}}
+    {{#each ariantMVIP}}
+    document.getElementById("ariant_{{image}}").src = "images/hairstyles/" + color + "/" + "{{image}}.png";
+    {{/each}}
+    {{#each ariantMREG}}
+    document.getElementById("ariant_{{image}}").src = "images/hairstyles/" + color + "/" + "{{image}}.png";
+    {{/each}}
+    {{#each showaFVIP}}
+    document.getElementById("showa_{{image}}").src = "images/hairstyles/" + color + "/" + "{{image}}.png";
+    {{/each}}
+    {{#each showaFREG}}
+    document.getElementById("showa_{{image}}").src = "images/hairstyles/" + color + "/" + "{{image}}.png";
+    {{/each}}
+    {{#each showaMVIP}}
+    document.getElementById("showa_{{image}}").src = "images/hairstyles/" + color + "/" + "{{image}}.png";
+    {{/each}}
+    {{#each showaMREG}}
+    document.getElementById("showa_{{image}}").src = "images/hairstyles/" + color + "/" + "{{image}}.png";
+    {{/each}}
+}
+
+function switchColor(newColor) {
+    if (color != newColor) {
+        color = newColor;
+        reload();
+    }
+}
+
+window.onload = function() {
+    reload();
+}
+</script>
