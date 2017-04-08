@@ -21,6 +21,11 @@
 </div>
 
 <div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <span id="currentColor"></span>
+        </div>
+    </div>
     <div class="navbar navbar-default" role="navigation">
         <div class="navbar-inner">
        	    <div class="container">
@@ -53,7 +58,7 @@
                     <a data-toggle="collapse" data-toggle="#accordion" href="#collapse1">Royal Faces</a>
                 </h4>
             </div>
-            <div id="collapse1" class="panel-collapse collapse in">
+            <div id="collapse1" class="panel-collapse collapse">
                 <div class="panel-body">
                     <div class="row">
                         <div class="col-sm-12">
@@ -241,6 +246,21 @@
             </div>
             <div id="collapse7" class="panel-collapse collapse">
                 <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Female VIP Faces</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{#each mulungF}}
+                        <div class="col-sm-2 col-xs-6">
+                            <div class="anchor">
+                                <img id="mulung_{{image}}"><br />
+                                <p>{{name}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
                 </div>
             </div>
         </div>
@@ -254,11 +274,26 @@
             </div>
             <div id="collapse8" class="panel-collapse collapse">
                 <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Female VIP Faces</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{#each edelF}}
+                        <div class="col-sm-2 col-xs-6">
+                            <div class="anchor">
+                                <img id="edel_{{image}}"><br />
+                                <p>{{name}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
                 </div>
             </div>
         </div>
         <!-- END EDELSTEIN -->
-        <!-- BEGIN ARIANT -->
+        <!-- BEGIN SHOWA -->
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
@@ -267,11 +302,26 @@
             </div>
             <div id="collapse9" class="panel-collapse collapse">
                 <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Female VIP Faces</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{#each showaF}}
+                        <div class="col-sm-2 col-xs-6">
+                            <div class="anchor">
+                                <img id="showa_{{image}}"><br />
+                                <p>{{name}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- END ARIANT -->
-        <!-- BEGIN SHOWA -->
+        <!-- END SHOWA -->
+        <!-- BEGIN ARIANT -->
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
@@ -305,7 +355,35 @@
                 </div>
             </div>
         </div>
-        <!-- END SHOWA -->
+        <!-- END ARIANT -->
+        <!-- BEGIN SINGAPORE -->
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-toggle="#accordion" href="#collapse12">Singapore (CBD) Plastic Surgery</a>
+                </h4>
+            </div>
+            <div id="collapse12" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Female VIP Faces</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{#each cbdF}}
+                        <div class="col-sm-2 col-xs-6">
+                            <div class="anchor">
+                                <img id="cbd_{{image}}"><br />
+                                <p>{{name}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END SINGAPORE -->
         <!-- BEGIN SHANGHAI -->
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -326,6 +404,8 @@
 var color = "red";
 
 function reload() {
+    document.getElementById("currentColor").innerHTML = "Viewing <b>" + color + "</b> eyes";
+
     {{#each ariantF}}
     document.getElementById("ariant_{{image}}").src = "images/faces/" + color + "/" + "{{image}}.png";
     {{/each}}
@@ -340,6 +420,18 @@ function reload() {
     {{/each}}
     {{#each ludiF}}
     document.getElementById("ludi_{{image}}").src = "images/faces/" + color + "/" + "{{image}}.png";
+    {{/each}}
+    {{#each mulungF}}
+    document.getElementById("mulung_{{image}}").src = "images/faces/" + color + "/" + "{{image}}.png";
+    {{/each}}
+    {{#each edelF}}
+    document.getElementById("edel_{{image}}").src = "images/faces/" + color + "/" + "{{image}}.png";
+    {{/each}}
+    {{#each showaF}}
+    document.getElementById("showa_{{image}}").src = "images/faces/" + color + "/" + "{{image}}.png";
+    {{/each}}
+    {{#each cbdF}}
+    document.getElementById("cbd_{{image}}").src = "images/faces/" + color + "/" + "{{image}}.png";
     {{/each}}
 }
 
