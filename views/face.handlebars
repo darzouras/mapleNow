@@ -148,19 +148,6 @@
             </div>
         </div>
         <!-- END HENESYS -->
-        <!-- BEGIN AMORIA
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <a data-toggle="collapse" data-toggle="#accordion" href="#collapse12">Amoria Plastic Surgery</a>
-                </h4>
-            </div>
-            <div id="collapse12" class="panel-collapse collapse">
-                <div class="panel-body">
-                </div>
-            </div>
-        </div>
-        END AMORIA -->
         <!-- BEGIN NLC -->
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -170,6 +157,21 @@
             </div>
             <div id="collapse4" class="panel-collapse collapse">
                 <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Female VIP Faces</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{#each nlcF}}
+                        <div class="col-sm-2 col-xs-6">
+                            <div class="anchor">
+                                <img id="nlc_{{image}}"><br />
+                                <p>{{name}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
                 </div>
             </div>
         </div>
@@ -183,6 +185,21 @@
             </div>
             <div id="collapse5" class="panel-collapse collapse">
                 <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Female VIP Faces</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{#each orbisF}}
+                        <div class="col-sm-2 col-xs-6">
+                            <div class="anchor">
+                                <img id="orbis_{{image}}"><br />
+                                <p>{{name}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
                 </div>
             </div>
         </div>
@@ -196,6 +213,21 @@
             </div>
             <div id="collapse6" class="panel-collapse collapse">
                 <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Female VIP Faces</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{#each ludiF}}
+                        <div class="col-sm-2 col-xs-6">
+                            <div class="anchor">
+                                <img id="ludi_{{image}}"><br />
+                                <p>{{name}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
                 </div>
             </div>
         </div>
@@ -299,6 +331,15 @@ function reload() {
     {{/each}}
     {{#each henesysF}}
     document.getElementById("hen_{{image}}").src = "images/faces/" + color + "/" + "{{image}}.png";
+    {{/each}}
+    {{#each nlcF}}
+    document.getElementById("nlc_{{image}}").src = "images/faces/" + color + "/" + "{{image}}.png";
+    {{/each}}
+    {{#each orbisF}}
+    document.getElementById("orbis_{{image}}").src = "images/faces/" + color + "/" + "{{image}}.png";
+    {{/each}}
+    {{#each ludiF}}
+    document.getElementById("ludi_{{image}}").src = "images/faces/" + color + "/" + "{{image}}.png";
     {{/each}}
 }
 
