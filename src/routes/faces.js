@@ -183,7 +183,7 @@ exports.faceStyles = function(req, res) {
             {name: "Look of Wonder", image: "lookofwonder1"},
             {name: "Ghost Face Stare", image: "ghostfacestare1"},
             {name: "Fierce Edge", image: "fierceedge1"}
-        ]
+        ],
         showaF: [
             {name: "Compassion Look", image: "compassionlook1"},
             {name: "Defiant Face", image: "defiantface1"},
