@@ -21,36 +21,6 @@
 </div>
 
 <div class="container">
-    <div class="row">
-        <div class="col-sm-12">
-            <span id="currentColor"></span>
-        </div>
-    </div>
-    <div class="navbar navbar-default" role="navigation">
-        <div class="navbar-inner">
-       	    <div class="container">
-                <ul class="nav navbar-nav">
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Eye Colors<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="javascript:;" onclick="switchColor('black')">Black</a>
-                            <li><a href="javascript:;" onclick="switchColor('red')">Red</a></li>
-                            <li><a href="javascript:;" onclick="switchColor('blue')">Blue</a></li>
-                            <li><a href="javascript:;" onclick="switchColor('green')">Green</a></li>
-                            <li><a href="javascript:;" onclick="switchColor('hazel')">Hazel</a></li>
-                            <li><a href="javascript:;" onclick="switchColor('sapphire')">Sapphire</a></li>
-                            <li><a href="javascript:;" onclick="switchColor('violet')">Violet</a></li>
-                            <li><a href="javascript:;" onclick="switchColor('amethyst')">Amethyst</a></li>
-                            <li><a href="javascript:;" onclick="switchColor('white')">White</a></li>
-                        </ul>
-                    </li>
-                </ul>
-    		</div>
-    	</div>
-    </div>
-</div>
-
-<div class="container">
     <div class="panel-group" id="accordion">
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -149,6 +119,21 @@
                         </div>
                         {{/each}}
                     </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Male VIP Faces</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{#each henesysM}}
+                        <div class="col-sm-2 col-xs-6">
+                            <div class="anchor">
+                                <img id="hen_{{image}}"><br />
+                                <p>{{name}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
                 </div>
             </div>
         </div>
@@ -169,6 +154,21 @@
                     </div>
                     <div class="row">
                         {{#each nlcF}}
+                        <div class="col-sm-2 col-xs-6">
+                            <div class="anchor">
+                                <img id="nlc_{{image}}"><br />
+                                <p>{{name}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Male VIP Faces</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{#each nlcM}}
                         <div class="col-sm-2 col-xs-6">
                             <div class="anchor">
                                 <img id="nlc_{{image}}"><br />
@@ -205,6 +205,21 @@
                         </div>
                         {{/each}}
                     </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Male VIP Faces</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{#each orbisM}}
+                        <div class="col-sm-2 col-xs-6">
+                            <div class="anchor">
+                                <img id="orbis_{{image}}"><br />
+                                <p>{{name}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
                 </div>
             </div>
         </div>
@@ -233,6 +248,21 @@
                         </div>
                         {{/each}}
                     </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Male VIP Faces</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{#each ludiM}}
+                        <div class="col-sm-2 col-xs-6">
+                            <div class="anchor">
+                                <img id="ludi_{{image}}"><br />
+                                <p>{{name}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
                 </div>
             </div>
         </div>
@@ -253,6 +283,21 @@
                     </div>
                     <div class="row">
                         {{#each mulungF}}
+                        <div class="col-sm-2 col-xs-6">
+                            <div class="anchor">
+                                <img id="mulung_{{image}}"><br />
+                                <p>{{name}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Male VIP Faces</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{#each mulungM}}
                         <div class="col-sm-2 col-xs-6">
                             <div class="anchor">
                                 <img id="mulung_{{image}}"><br />
@@ -404,24 +449,37 @@
 var color = "red";
 
 function reload() {
-    document.getElementById("currentColor").innerHTML = "Viewing <b>" + color + "</b> eyes";
-
     {{#each ariantF}}
     document.getElementById("ariant_{{image}}").src = "images/faces/" + color + "/" + "{{image}}.png";
     {{/each}}
     {{#each henesysF}}
     document.getElementById("hen_{{image}}").src = "images/faces/" + color + "/" + "{{image}}.png";
     {{/each}}
+    {{#each henesysM}}
+    document.getElementById("hen_{{image}}").src = "images/faces/" + color + "/" + "{{image}}.png";
+    {{/each}}
     {{#each nlcF}}
+    document.getElementById("nlc_{{image}}").src = "images/faces/" + color + "/" + "{{image}}.png";
+    {{/each}}
+    {{#each nlcM}}
     document.getElementById("nlc_{{image}}").src = "images/faces/" + color + "/" + "{{image}}.png";
     {{/each}}
     {{#each orbisF}}
     document.getElementById("orbis_{{image}}").src = "images/faces/" + color + "/" + "{{image}}.png";
     {{/each}}
+    {{#each orbisM}}
+    document.getElementById("orbis_{{image}}").src = "images/faces/" + color + "/" + "{{image}}.png";
+    {{/each}}
     {{#each ludiF}}
     document.getElementById("ludi_{{image}}").src = "images/faces/" + color + "/" + "{{image}}.png";
     {{/each}}
+    {{#each ludiM}}
+    document.getElementById("ludi_{{image}}").src = "images/faces/" + color + "/" + "{{image}}.png";
+    {{/each}}
     {{#each mulungF}}
+    document.getElementById("mulung_{{image}}").src = "images/faces/" + color + "/" + "{{image}}.png";
+    {{/each}}
+    {{#each mulungM}}
     document.getElementById("mulung_{{image}}").src = "images/faces/" + color + "/" + "{{image}}.png";
     {{/each}}
     {{#each edelF}}
@@ -444,5 +502,83 @@ function switchColor(newColor) {
 
 window.onload = function() {
     reload();
+
+    var footer = document.getElementById("footernav");
+    document.getElementById("tweet").remove();
+    document.getElementById("github").remove();
+    document.getElementById("footerBrand").textContent = "Eye Colors";
+
+    var setWhite = document.createElement("li");
+    setWhite.class = "left";
+    var aWhite = document.createElement("a");
+    aWhite.href = "javascript: switchColor('white');";
+    aWhite.innerHTML = "White";
+    setWhite.appendChild(aWhite);
+
+    var setAm = document.createElement("li");
+    setAm.class = "left";
+    var aAm = document.createElement("a");
+    aAm.href = "javascript: switchColor('amethyst');";
+    aAm.innerHTML = "Amethyst";
+    setAm.appendChild(aAm);
+
+    var setViolet = document.createElement("li");
+    setViolet.class = "left";
+    var aViolet = document.createElement("a");
+    aViolet.href = "javascript: switchColor('violet');";
+    aViolet.innerHTML = "Violet";
+    setViolet.appendChild(aViolet);
+
+    var setSapphire = document.createElement("li");
+    setSapphire.class = "left";
+    var aSapphire = document.createElement("a");
+    aSapphire.href = "javascript: switchColor('sapphire');";
+    aSapphire.innerHTML = "Sapphire";
+    setSapphire.appendChild(aSapphire);
+
+    var setHazel = document.createElement("li");
+    setHazel.class = "left";
+    var aHazel = document.createElement("a");
+    aHazel.href = "javascript: switchColor('hazel');";
+    aHazel.innerHTML = "Hazel";
+    setHazel.appendChild(aHazel);
+
+    var setGreen = document.createElement("li");
+    setGreen.class = "left";
+    var aGreen = document.createElement("a");
+    aGreen.href = "javascript: switchColor('green');";
+    aGreen.innerHTML = "Green";
+    setGreen.appendChild(aGreen);
+
+    var setBlue = document.createElement("li");
+    setBlue.class = "left";
+    var aBlue = document.createElement("a");
+    aBlue.href = "javascript: switchColor('blue');";
+    aBlue.innerHTML = "Blue";
+    setBlue.appendChild(aBlue);
+
+    var setRed = document.createElement("li");
+    setRed.class = "left";
+    var aRed = document.createElement("a");
+    aRed.href = "javascript: switchColor('red');";
+    aRed.innerHTML = "Red";
+    setRed.appendChild(aRed);
+
+    var setBlack = document.createElement("li");
+    setBlack.class = "left";
+    var aBlack = document.createElement("a");
+    aBlack.href = "javascript: switchColor('black');";
+    aBlack.innerHTML = "Black";
+    setBlack.appendChild(aBlack);
+
+    footer.appendChild(setBlack);
+    footer.appendChild(setRed);
+    footer.appendChild(setBlue);
+    footer.appendChild(setGreen);
+    footer.appendChild(setHazel);
+    footer.appendChild(setSapphire);
+    footer.appendChild(setViolet);
+    footer.appendChild(setAm);
+    footer.appendChild(setWhite);
 }
 </script>

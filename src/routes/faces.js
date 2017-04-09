@@ -24,6 +24,22 @@ exports.faceStyles = function(req, res) {
             {name: "Innocent Look", image: "innocentlook1"},
             {name: "Tender Love", image: "tenderlove1"}
         ],
+        henesysM: [
+            {name: "Defiant Face", image: "defiantface2"},
+            {name: "Confident Face", image: "confidentface1"},
+            {name: "Prudent Face", image: "prudentface2"},
+            {name: "Dramatic Face", image: "dramaticface1"},
+            {name: "Rebel's Fire", image: "rebelsfire1"},
+            {name: "Alert Face", image: "alertface1"},
+            {name: "Babyface Pout", image: "babyfacepout2"},
+            {name: "Sad Innocence", image: "sadinnocence1"},
+            {name: "Worrisome Glance", image: "worrisomeglare1"},
+            {name: "Curious Dog", image: "curiousdog1"},
+            {name: "Look of Wonder", image: "lookofwonder1"},
+            {name: "Eye of the Lion", image: "eyeofthelion1"},
+            {name: "Child's Play", image: "childsplay1"},
+            {name: "Sarcastic Face", image: "sarcasticface1"}
+        ],
         nlcF: [
             {name: "Beauty Stare", image: "beautystare1"},
             {name: "Prudent Face", image: "prudentface1"},
@@ -34,6 +50,17 @@ exports.faceStyles = function(req, res) {
             {name: "Pucker Up Face", image: "puckerupface1"},
             {name: "Hopeless Gaze", image: "hopelessgaze1"},
             {name: "Soul's Window", image: "soulswindow1"}
+        ],
+        nlcM: [
+            {name: "Curious Dog", image: "curiousdog1"},
+            {name: "Defiant Face", image: "defiantface2"},
+            {name: "Confident Face", image: "confidentface1"},
+            {name: "Prudent Face", image: "prudentface2"},
+            {name: "Dramatic Face", image: "dramaticface1"},
+            {name: "Rebel's Fire", image: "rebelsfire1"},
+            {name: "Alert Face", image: "alertface1"},
+            {name: "Babyface Pout", image: "babyfacepout2"},
+            {name: "Worrisome Glance", image: "worrisomeglare1"}
         ],
         orbisF: [
             {name: "Defiant Face", image: "defiantface1"},
@@ -50,6 +77,21 @@ exports.faceStyles = function(req, res) {
             {name: "Innocent Look", image: "innocentlook1"},
             {name: "Tender Love", image: "tenderlove1"}
         ],
+        orbisM: [
+            {name: "Defiant Face", image: "defiantface2"},
+            {name: "Confident Face", image: "confidentface1"},
+            {name: "Prudent Face", image: "prudentface2"},
+            {name: "Dramatic Face", image: "dramaticface1"},
+            {name: "Rebel's Fire", image: "rebelsfire1"},
+            {name: "Alert Face", image: "alertface1"},
+            {name: "Babyface Pout", image: "babyfacepout2"},
+            {name: "Sad Innocence", image: "sadinnocence1"},
+            {name: "Worrisome Glare", image: "worrisomeglare1"},
+            {name: "Curious Dog", image: "curiousdog1"},
+            {name: "Look of Wonder", image: "lookofwonder1"},
+            {name: "Child's Play", image: "childsplay1"},
+            {name: "Sarcastic Face", image: "sarcasticface1"}
+        ],
         ludiF: [
             {name: "Defiant Face", image: "defiantface1"},
             {name: "Prudent Face", image: "prudentface1"},
@@ -64,6 +106,20 @@ exports.faceStyles = function(req, res) {
             {name: "Curious Look", image: "curiouslook1"},
             {name: "Wisdom Glance", image: "wisdomgaze1"}
         ],
+        ludiM: [
+            {name: "Defiant Face", image: "defiantface2"},
+            {name: "Confident Face", image: "confidentface1"},
+            {name: "Prudent Face", image: "prudentface2"},
+            {name: "Dramatic Face", image: "dramaticface1"},
+            {name: "Rebel's Fire", image: "rebelsfire1"},
+            {name: "Alert Face", image: "alertface1"},
+            {name: "Babyface Pout", image: "babyfacepout2"},
+            {name: "Sad Innocence", image: "sadinnocence1"},
+            {name: "Worrisome Glance", image: "worrisomeglare1"},
+            {name: "Curious Dog", image: "curiousdog1"},
+            {name: "Look of Wonder", image: "lookofwonder1"},
+            {name: "Cool Guy Gaze", image: "coolguygaze1"}
+        ],
         mulungF: [
             {name: "Hypnotized Look", image: "hypnotizedlook1"},
             {name: "Defiant Face", image: "defiantface1"},
@@ -76,6 +132,19 @@ exports.faceStyles = function(req, res) {
             {name: "Look Of Death", image: "lookofdeath1"},
             {name: "Innocent Look", image: "innocentlook1"},
             {name: "Tender Love", image: "tenderlove1"}
+        ],
+        mulungM: [
+            {name: "Defiant Face", image: "defiantface2"},
+            {name: "Confident Face", image: "confidentface1"},
+            {name: "Prudent Face", image: "prudentface2"},
+            {name: "Rebel's Fire", image: "rebelsfire1"},
+            {name: "Alert Face", image: "alertface1"},
+            {name: "Babyface Pout", image: "babyfacepout2"},
+            {name: "Sad Innocence", image: "sadinnocence1"},
+            {name: "Curious Dog", image: "curiousdog1"},
+            {name: "Smart Aleck", image: "smartaleck1"},
+            {name: "Child's Play", image: "childsplay1"},
+            {name: "Sarcastic Face", image: "sarcasticface1"}
         ],
         edelF: [
             {name: "Defiant Face", image: "defiantface1"},
@@ -100,6 +169,21 @@ exports.faceStyles = function(req, res) {
             {name: "Glamorous Edge", image: "glamorousedge1"},
             {name: "Kitty Cat", image: "kittycat1"}
         ],
+        edelM: [
+            {name: "Defiant Face", image: "defiantface2"},
+            {name: "Confident Face", image: "confidentface1"},
+            {name: "Prudent Face", image: "prudentface2"},
+            {name: "Dramatic Face", image: "dramaticface1"},
+            {name: "Rebel's Fire", image: "rebelsfire1"},
+            {name: "Alert Face", image: "alertface1"},
+            {name: "Babyface Pout", image: "babyfacepout2"},
+            {name: "Sad Innocence", image: "sadinnocence1"},
+            {name: "Worrisome Glare", image: "worrisomeglare1"},
+            {name: "Curious Dog", image: "curiousdog1"},
+            {name: "Look of Wonder", image: "lookofwonder1"},
+            {name: "Ghost Face Stare", image: "ghostfacestare1"},
+            {name: "Fierce Edge", image: "fierceedge1"}
+        ]
         showaF: [
             {name: "Compassion Look", image: "compassionlook1"},
             {name: "Defiant Face", image: "defiantface1"},

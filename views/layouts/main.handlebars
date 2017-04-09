@@ -52,18 +52,28 @@
                 </div>
             </div>
         </nav>
+
         <div style="margin-top: 50px; margin-bottom: 75px; margin-left: 0px; margin-right: 0px;">
             {{{body}}}
         </div>
 
-        <div class="navbar navbar-default navbar-fixed-bottom">
+        <nav class="navbar navbar-default navbar-fixed-bottom">
             <div class="container-fluid">
-                <div class="navbar-footer">
-                    <ul class="nav navbar-nav">
-                        <li class="left"><a>MapleNow © 2017</a></li>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bottomNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <span class="navbar-brand" id="footerBrand">MapleNow © 2017</span>
+                </div>
+                <div class="collapse navbar-collapse" id="bottomNavbar">
+                    <ul class="nav navbar-nav" id="footernav">
+                        <li id="tweet"><a href="http://twitter.com/darzouras" target="_blank">darzouras @ twitter</a></li>
+                        <li id="github"><a href="http://github.com/darzouras" target="_blank">darzouras @ github</a></li>
                     </ul>
                 </div>
             </div>
-        </div>
+        </nav>
     </body>
 </html>
