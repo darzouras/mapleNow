@@ -1,5 +1,21 @@
 exports.faceStyles = function(req, res) {
     var context = {
+        royalF: [
+            {name: "Pink Bean Face", image: "pinkbeanface1"},
+            {name: "Dr. Jang Face", image: "drjangface1"},
+            {name: "Marble Eyes", image: "marbleeyes1"},
+            {name: "Pure Gaze", image: "puregaze1"},
+            {name: "Puppy-Eyed Face", image: "puppyeyedface1"},
+            {name: "Bulbous-Eyed Face", image: "bulbouseyedface1"}
+        ],
+        royalM: [
+            {name: "Pink Bean Face", image: "pinkbeanface2"},
+            {name: "Naricain Face", image: "naricainface1"},
+            {name: "Marble Eyes", image: "marbleeyes2"},
+            {name: "Glancing Face", image: "glancingface1"},
+            {name: "Puppy Eyes Face", image: "puppyeyesface1"},
+            {name: "Come On Over Face", image: "comeonoverface1"}
+        ],
         ariantF: [
             {name: "Look of Death", image: "lookofdeath1"},
             {name: "Defiant Face", image: "defiantface1"},
@@ -7,6 +23,14 @@ exports.faceStyles = function(req, res) {
             {name: "Strong Stare", image: "strongstare1"},
             {name: "Pucker Up Face", image: "puckerupface1"},
             {name: "Soul's Window", image: "soulswindow1"}
+        ],
+        ariantM: [
+            {name: "Insomniac Daze", image: "insomniacdaze1"},
+            {name: "Defiant Face", image: "defiantface2"},
+            {name: "Prudent Face", image: "prudentface2"},
+            {name: "Rebel's Fire", image: "rebelsfire1"},
+            {name: "Alert Face", image: "alertface1"},
+            {name: "Curious Dog", image: "curiousdog1"}
         ],
         henesysF: [
             {name: "Defiant Face", image: "defiantface1"},
@@ -182,7 +206,15 @@ exports.faceStyles = function(req, res) {
             {name: "Curious Dog", image: "curiousdog1"},
             {name: "Look of Wonder", image: "lookofwonder1"},
             {name: "Ghost Face Stare", image: "ghostfacestare1"},
-            {name: "Fierce Edge", image: "fierceedge1"}
+            {name: "Fierce Edge", image: "fierceedge1"},
+            {name: "Demure Poise", image: "demurepoise1"},
+            {name: "Insomniac Daze", image: "insomniacdaze1"},
+            {name: "Child's Play", image: "childsplay1"},
+            {name: "Edge of Emotion", image: "edgeofemotion1"},
+            {name: "Pensive Look", image: "pensivelook1"},
+            {name: "Sarcastic Face", image: "sarcasticface1"},
+            {name: "Shade of Cool", image: "shadeofcool1"},
+            {name: "Fearful Glance", image: "fearfulglance1"}
         ],
         showaF: [
             {name: "Compassion Look", image: "compassionlook1"},
@@ -192,6 +224,14 @@ exports.faceStyles = function(req, res) {
             {name: "Pucker Up Face", image: "puckerupface1"},
             {name: "Soul's Window", image: "soulswindow1"}
         ],
+        showaM: [
+            {name: "Fierce Edge", image: "fierceedge1"},
+            {name: "Defiant Face", image: "defiantface2"},
+            {name: "Prudent Face", image: "prudentface2"},
+            {name: "Rebel's Fire", image: "rebelsfire1"},
+            {name: "Alert Face", image: "alertface1"},
+            {name: "Curious Dog", image: "curiousdog1"}
+        ],
         cbdF: [
             {name: "Compassion Look", image: "compassionlook1"},
             {name: "Hypnotized Look", image: "hypnotizedlook1"},
@@ -199,6 +239,14 @@ exports.faceStyles = function(req, res) {
             {name: "Shuteye", image: "shuteye1"},
             {name: "Pucker Up Face", image: "puckerupface1"},
             {name: "Soul's Window", image: "soulswindow1"}
+        ],
+        cbdM: [
+            {name: "Fierce Edge", image: "fierceedge1"},
+            {name: "Insomniac Daze", image: "insomniacdaze1"},
+            {name: "Overjoyed Smile", image: "overjoyedsmile1"},
+            {name: "Shuteye", image: "shuteye2"},
+            {name: "Alert Face", image: "alertface1"},
+            {name: "Curious Dog", image: "curiousdog1"}
         ]
     };
     context.title = "MapleNow - Plastic Surgery";
