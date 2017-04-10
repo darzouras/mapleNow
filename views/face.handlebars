@@ -106,6 +106,54 @@
             </div>
         </div>
         <!-- END HENESYS -->
+        <!-- BEGIN AMORIA -->
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-toggle="#accordion" href="#collapse13">Amoria Plastic Surgery</a>
+                </h4>
+            </div>
+            <div id="collapse13" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>A note on Amoria</strong> - Currently the only way to access Amoria to find the salon and face NPCs is to teleport into it (which usually means you would use a hyper teleport rock). These NPCs are NOT in the current wedding town map! I've listed them because this is currently the only method to get some of the face and hair styles currently.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Female VIP Faces</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{#each amoriaF}}
+                        <div class="col-sm-2 col-xs-6">
+                            <div class="anchor">
+                                <img id="amoria_{{image}}"><br />
+                                <p>{{name}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Male VIP Faces</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{#each amoriaM}}
+                        <div class="col-sm-2 col-xs-6">
+                            <div class="anchor">
+                                <img id="amoria_{{image}}"><br />
+                                <p>{{name}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END Amoria -->
         <!-- BEGIN NLC -->
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -450,7 +498,7 @@
             </div>
         </div>
         <!-- END SINGAPORE -->
-        <!-- BEGIN SHANGHAI -->
+        <!-- BEGIN SHANGHAI
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
@@ -462,7 +510,7 @@
                 </div>
             </div>
         </div>
-        <!-- END SHANGHAI -->
+        END SHANGHAI -->
     </div>
 </div>
 
@@ -472,6 +520,12 @@ var color = "red";
 function reload() {
     {{#each royalF}}
     document.getElementById("royal_{{image}}").src = "images/faces/" + color + "/" + "{{image}}.png";
+    {{/each}}
+    {{#each amoriaF}}
+    document.getElementById("amoria_{{image}}").src = "images/faces/" + color + "/" + "{{image}}.png";
+    {{/each}}
+    {{#each amoriaM}}
+    document.getElementById("amoria_{{image}}").src = "images/faces/" + color + "/" + "{{image}}.png";
     {{/each}}
     {{#each royalM}}
     document.getElementById("royal_{{image}}").src = "images/faces/" + color + "/" + "{{image}}.png";

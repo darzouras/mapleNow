@@ -32,6 +32,30 @@ exports.faceStyles = function(req, res) {
             {name: "Alert Face", image: "alertface1"},
             {name: "Curious Dog", image: "curiousdog1"}
         ],
+        amoriaF: [
+            {name: "Athena's Grace", image: "athenasgrace1"},
+            {name: "Hera's Radiance", image: "herasradiance1"},
+            {name: "Prudent Face", image: "prudentface1"},
+            {name: "Intelligent Face", image: "intelligentface1"},
+            {name: "Strong Stare", image: "strongstare1"},
+            {name: "Angel Glow", image: "angelglow1"},
+            {name: "Babyface Pout", image: "babyfacepout1"},
+            {name: "Pucker Up Face", image: "puckerupface1"},
+            {name: "Dollface Look", image: "dollfacelook1"},
+            {name: "Soul's Window", image: "soulswindow1"}
+        ],
+        amoriaM: [
+            {name: "Champion Focus", image: "championfocus1"},
+            {name: "Irritable Face", image: "irritableface1"},
+            {name: "Defiant Face", image: "defiantface2"},
+            {name: "Confident Face", image: "confidentface1"},
+            {name: "Dramatic Face", image: "dramaticface1"},
+            {name: "Rebel's Fire", image: "rebelsfire1"},
+            {name: "Alert Face", image: "alertface1"},
+            {name: "Babyface Pout", image: "babyfacepout2"},
+            {name: "Sad Innocence", image: "sadinnocence1"},
+            {name: "Worrisome Glare", image: "worrisomeglare1"}
+        ],
         henesysF: [
             {name: "Defiant Face", image: "defiantface1"},
             {name: "Prudent Face", image: "prudentface1"},
