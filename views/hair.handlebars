@@ -31,30 +31,6 @@
 </div>
 
 <div class="container">
-    <div class="navbar navbar-default" role="navigation">
-        <div class="navbar-inner">
-       	    <div class="container">
-                <ul class="nav navbar-nav">
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Hair Colors<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="javascript:;" onclick="switchColor('black')">Black</a></li>
-                            <li>Brown</li>
-                            <li>Red</li>
-                            <li>Orange</li>
-                            <li>Yellow</li>
-                            <li>Green</li>
-                            <li>Blue</li>
-                            <li>Purple</li>
-                        </ul>
-                    </li>
-                </ul>
-    		</div>
-    	</div>
-    </div>
-</div>
-
-<div class="container">
     <div class="panel-group" id="accordion">
         <!-- BEGIN ROYAL HAIRSTYLES -->
         <div class="panel panel-default">
@@ -63,7 +39,7 @@
                     <a data-toggle="collapse" data-toggle="#accordion" href="#collapse1">Royal Hair Styles [4/5/2017 - 4/26/2017]</a>
                 </h4>
             </div>
-            <div id="collapse1" class="panel-collapse collapse in">
+            <div id="collapse1" class="panel-collapse collapse">
                 <div class="panel-body">
                     <div class="row">
                         <div class="col-sm-12">
@@ -74,7 +50,7 @@
                         {{#each royalF}}
                         <div class="col-sm-2 col-xs-6">
                             <div class="anchor">
-                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <img id="royal_{{image}}"><br />
                                 <p>{{name}}</p>
                             </div>
                         </div>
@@ -89,7 +65,7 @@
                         {{#each royalM}}
                         <div class="col-sm-2 col-xs-6">
                             <div class="anchor">
-                                <img src="images/hairstyles/{{image}}.png"><br />
+                                <img id="royal_{{image}}"><br />
                                 <p>{{name}}</p>
                             </div>
                         </div>
@@ -772,6 +748,12 @@
 var color = "black";
 
 function reload() {
+    {{#each royalF}}
+    document.getElementById("royal_{{image}}").src = "images/hairstyles/" + color + "/" + "{{image}}.png";
+    {{/each}}
+    {{#each royalM}}
+    document.getElementById("royal_{{image}}").src = "images/hairstyles/" + color + "/" + "{{image}}.png";
+    {{/each}}
     {{#each henesysFVIP}}
     document.getElementById("hen_{{image}}").src = "images/hairstyles/" + color + "/" + "{{image}}.png";
     {{/each}}
@@ -885,5 +867,75 @@ function switchColor(newColor) {
 
 window.onload = function() {
     reload();
+
+    var footer = document.getElementById("footernav");
+    document.getElementById("tweet").remove();
+    document.getElementById("github").remove();
+    document.getElementById("footerBrand").textContent = "Hair Colors";
+
+    var setPurple = document.createElement("li");
+    setPurple.class = "left";
+    var aPurple = document.createElement("a");
+    aPurple.href = "javascript: switchColor('purple');";
+    aPurple.innerHTML = "Purple";
+    setPurple.appendChild(aPurple);
+
+    var setBrown = document.createElement("li");
+    setBrown.class = "left";
+    var aBrown = document.createElement("a");
+    aBrown.href = "javascript: switchColor('brown');";
+    aBrown.innerHTML = "Brown";
+    setBrown.appendChild(aBrown);
+
+    var setGreen = document.createElement("li");
+    setGreen.class = "left";
+    var aGreen = document.createElement("a");
+    aGreen.href = "javascript: switchColor('green');";
+    aGreen.innerHTML = "Green";
+    setGreen.appendChild(aGreen);
+
+    var setBlue = document.createElement("li");
+    setBlue.class = "left";
+    var aBlue = document.createElement("a");
+    aBlue.href = "javascript: switchColor('blue');";
+    aBlue.innerHTML = "Blue";
+    setBlue.appendChild(aBlue);
+
+    var setOrange = document.createElement("li");
+    setOrange.class = "left";
+    var aOrange = document.createElement("a");
+    aOrange.href = "javascript: switchColor('orange');";
+    aOrange.innerHTML = "Orange";
+    setOrange.appendChild(aOrange);
+
+    var setYellow = document.createElement("li");
+    setYellow.class = "left";
+    var aYellow = document.createElement("a");
+    aYellow.href = "javascript: switchColor('yellow');";
+    aYellow.innerHTML = "Yellow";
+    setYellow.appendChild(aYellow);
+
+    var setRed = document.createElement("li");
+    setRed.class = "left";
+    var aRed = document.createElement("a");
+    aRed.href = "javascript: switchColor('red');";
+    aRed.innerHTML = "Red";
+    setRed.appendChild(aRed);
+
+    var setBlack = document.createElement("li");
+    setBlack.class = "left";
+    var aBlack = document.createElement("a");
+    aBlack.href = "javascript: switchColor('black');";
+    aBlack.innerHTML = "Black";
+    setBlack.appendChild(aBlack);
+
+    footer.appendChild(setBlack);
+    footer.appendChild(setRed);
+    footer.appendChild(setOrange);
+    footer.appendChild(setYellow);
+    footer.appendChild(setBlue);
+    footer.appendChild(setGreen);
+    footer.appendChild(setPurple);
+    footer.appendChild(setBrown);
 }
 </script>
