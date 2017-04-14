@@ -711,10 +711,99 @@
             </div>
             <div id="collapse11" class="panel-collapse collapse">
                 <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Female VIP Hair Styles</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{#each shanghaiF}}
+                        <div class="col-sm-2 col-xs-6">
+                            <div class="anchor">
+                                <img id="shanghai_{{image}}"><br />
+                                <p>{{name}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Male VIP Hair Styles</strong></p>
+                            <p>I don't have any information on the male hair styles available from the salon in Shanghai :(. If you can send me the list of hair styles please reach out to me at darizard@gmail.com!</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- END SHANGHAI -->
+        <!-- BEGIN MT SONG -->
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-toggle="#accordion" href="#collapse14">Mt. Song (Shaolin) Hair Salon</a>
+                </h4>
+            </div>
+            <div id="collapse14" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Female VIP Hair Styles</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{#each mtsongF}}
+                        <div class="col-sm-2 col-xs-6">
+                            <div class="anchor">
+                                <img id="mtsong_{{image}}"><br />
+                                <p>{{name}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Male VIP Hair Styles</strong></p>
+                            <p>I don't have any information on the male hair styles available from the salon in Mt. Song :(. If you can send me the list of hair styles please reach out to me at darizard@gmail.com!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MT SONG -->
+        <!-- BEGIN MAHAVIRA HALL -->
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-toggle="#accordion" href="#collapse15">Mahavira Hall (Shaolin) Hair Salon</a>
+                </h4>
+            </div>
+            <div id="collapse15" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Female VIP Hair Styles</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{#each mahallF}}
+                        <div class="col-sm-2 col-xs-6">
+                            <div class="anchor">
+                                <img id="mahall_{{image}}"><br />
+                                <p>{{name}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Male VIP Hair Styles</strong></p>
+                            <p>I don't have any information on the male hair styles available from the salon in Mahavira Hall :(. If you can send me the list of hair styles please reach out to me at darizard@gmail.com!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MAHAVIRA HALL -->
         <!-- BEGIN SINGAPORE -->
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -855,6 +944,15 @@ function reload() {
     {{/each}}
     {{#each showaMREG}}
     document.getElementById("showa_{{image}}").src = "images/hairstyles/" + color + "/" + "{{image}}.png";
+    {{/each}}
+    {{#each shanghaiF}}
+    document.getElementById("shanghai_{{image}}").src = "images/hairstyles/" + color + "/" + "{{image}}.png";
+    {{/each}}
+    {{#each mtsongF}}
+    document.getElementById("mtsong_{{image}}").src = "images/hairstyles/" + color + "/{{image}}.png";
+    {{/each}}
+    {{#each mahallF}}
+    document.getElementById("mahall_{{image}}").src = "images/hairstyles/" + color + "/{{image}}.png";
     {{/each}}
 }
 

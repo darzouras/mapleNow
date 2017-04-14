@@ -498,7 +498,7 @@
             </div>
         </div>
         <!-- END SINGAPORE -->
-        <!-- BEGIN SHANGHAI
+        <!-- BEGIN SHANGHAI -->
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
@@ -507,10 +507,65 @@
             </div>
             <div id="collapse11" class="panel-collapse collapse">
                 <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Female VIP Faces</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{#each shanghaiF}}
+                        <div class="col-sm-2 col-xs-6">
+                            <div class="anchor">
+                                <img id="shanghai_{{image}}"><br />
+                                <p>{{name}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Male VIP Faces</strong></p>
+                            <p>I don't have any information on the male face styles available from the plastic surgery in Shanghai :(. If you can send me the list of face styles please reach out to me at darizard@gmail.com!</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        END SHANGHAI -->
+        <!-- END SHANGHAI -->
+        <!-- BELING MT SONG -->
+        <div class="panel palen-default">
+            <div class="panel-title">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-toggle="#accordion" href="collapse14">Mt. Song (Shaolin) Plastic Surgery</a>
+                </h4>
+            </div>
+            <div id="collapse14" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Female VIP Faces</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {{#each mtsongF}}
+                        <div class="col-sm-2 col-xs-6">
+                            <div class="anchor">
+                                <img id="mtsong_{{image}}"><br />
+                                <p>{{name}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Male VIP Faces</strong></p>
+                            <p>I don't have any information on the male face styles available from the plastic surgery in Mt. Song :(. If you can send me the list of face styles please reach out to me at darizard@gmail.com!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MT SONG -->
     </div>
 </div>
 
@@ -583,6 +638,12 @@ function reload() {
     {{/each}}
     {{#each cbdM}}
     document.getElementById("cbd_{{image}}").src = "images/faces/" + color + "/" + "{{image}}.png";
+    {{/each}}
+    {{#each shanghaiF}}
+    document.getElementById("shanghai_{{image}}").src = "images/faces/" + color + "/{{image}}.png";
+    {{/each}}
+    {{#each mtsongF}}
+    document.getElementById("mtsong_{{image}}").src = "images/faces/" + color + "/{{image}}.png";
     {{/each}}
 }
 
