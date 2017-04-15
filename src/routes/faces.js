@@ -273,7 +273,7 @@ exports.faceStyles = function(req, res) {
             {name: "Curious Dog", image: "curiousdog1"}
         ],
         shanghaiF: [
-            {name: "Motivated Look", image: "motivatedlook1"},
+            {name: "Defiant Face", image: "defiantface1"},
             {name: "Prudent Face", image: "prudentface1"},
             {name: "Intelligent Face", image: "intelligentface1"},
             {name: "Strong Stare", image: "strongstare1"},
@@ -295,7 +295,7 @@ exports.faceStyles = function(req, res) {
             {name: "Kitty Cat", image: "kittycat1"}
         ],
         mtsongF: [
-            {name: "Motivated Look", image: "motivatedlook1"},
+            {name: "Defiant Face", image: "defiantface1"},
             {name: "Prudent Face", image: "prudentface1"},
             {name: "Intelligent Face", image: "intelligentface1"},
             {name: "Strong Stare", image: "strongstare1"},
@@ -310,7 +310,7 @@ exports.faceStyles = function(req, res) {
             {name: "Demure Poise Eyes", image: "demurepoiseeyes1"},
             {name: "Wide-Eyed Girl", image: "wideeyedgirl1"},
             {name: "Compassion Look", image: "compassionlook1"},
-            {name: "Innocent Look", image; "innocentlook1"},
+            {name: "Innocent Look", image: "innocentlook1"},
             {name: "Lazy Look", image: "lazylook1"},
             {name: "Tender Love", image: "tenderlove1"},
             {name: "Glamorous Edge", image: "glamorousedge1"},
